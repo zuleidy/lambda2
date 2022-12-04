@@ -27,5 +27,5 @@ jobs:
         uses: appleboy/lambda-action@master
         with:
          
-          function_name: lambdada-action
+          function_name: lambda-action
           zip_file: bundle.zip
