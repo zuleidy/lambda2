@@ -13,10 +13,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - name: npm install and build
+      - name: yarn add install and build
         run: |
-          npm ci
-          npm run build --if-present
+          yarn add ci
+          yarn run build --if-present
         env:
           CI: true
       - name: zip
