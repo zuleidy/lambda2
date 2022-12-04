@@ -26,5 +26,5 @@ jobs:
       - name: default deploy
         uses: appleboy/lambda-action@master
         with:
-          function_name: lambda-action
+          function_name: lambda-action-API
           zip_file: bundle.zip
