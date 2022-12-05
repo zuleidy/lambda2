@@ -26,6 +26,7 @@ jobs:
       - name: default deploy
         uses: appleboy/lambda-action@master
         with:
-         
-          function_name:  lambda-action-API
+         aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          function_name:  lambda-action
           zip_file: bundle.zip
